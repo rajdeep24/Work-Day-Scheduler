@@ -6,9 +6,9 @@ For this project, the goal was to create a quiz application that challenged user
 
 Below are links to the webpage and the github repository for my Work-Day-Scheduler application:
 
-Github Pages URL: <>
+Github Pages URL: <https://rajdeep24.github.io/Work-Day-Scheduler/>
 
-Github Repository: <>
+Github Repository: <https://github.com/rajdeep24/Work-Day-Scheduler>
 
 ## Table of Contents
 
