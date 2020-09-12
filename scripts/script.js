@@ -6,58 +6,27 @@ $(document).ready(function () {
 	var currentDay = moment().format("dddd, MMMM Do");
 	$("#currentDay").text(currentDay);
 
-	// WHEN I scroll down
+	// WHEN I scroll downs
 	// THEN I am presented with timeblocks for standard business hours
-	currentHour = moment().format("ha"); //This is the format to display hour+am/pm
+	currentHour = moment().hour(); //This is the format to display hour+am/pm
 
-	//Create array of time blocks and each time block has two properties on it representing the timeblock label and the event.
-	var timeBlocks = [
-		{
-			time: "9am",
-			event: "test",
-		},
-		{
-			time: "10am",
-			event: "test",
-		},
-		{
-			time: "11am",
-			event: "test",
-		},
-		{
-			time: "12pm",
-			event: "test",
-		},
-		{
-			time: "1pm",
-			event: "test",
-		},
-		{
-			time: "2pm",
-			event: "test",
-		},
-		{
-			time: "3pm",
-			event: "test",
-		},
-		{
-			time: "4pm",
-			event: "test",
-		},
-		{
-			time: "5pm",
-			event: "test",
-		},
-	];
+	$(".saveBtn").on("click", function (event) {
+		var time = $(this).data("time");
+		var value = $("#time-" + time).val();
+		localStorage.setItem(time, value);
+	});
 
-	console.log(timeBlocks);
-	//-----------------------DOM Variables-------------------//
+	for (var i = 9; i < 18; i++) {
+		$("#time-" + i).val(localStorage.getItem(i));
 
-	//--------------------Function Definitions----------------//
-
-	//-----------------------Function Calls---------------------//
-
-	//----------------------Event Listeners---------------------//
+		if (currentHour > i) {
+			$("#time-" + i).addClass("past");
+		} else if (currentHour < i) {
+			$("#time-" + i).addClass("future");
+		} else {
+			$("#time-" + i).addClass("present");
+		}
+	}
 });
 // ## User Story
 
