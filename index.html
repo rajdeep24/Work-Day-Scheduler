@@ -4,20 +4,9 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<link
-			rel="stylesheet"
-			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-		/>
-		<link
-			rel="stylesheet"
-			href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-			integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-			crossorigin="anonymous"
-		/>
-		<link
-			href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-			rel="stylesheet"
-		/>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
 		<link rel="stylesheet" href="style.css" />
 		<title>Work Day Scheduler</title>
 	</head>
@@ -35,54 +24,51 @@
 		<div class="container">
 			<!-- PAST ROWS: Should be 0 past events before 9am and increment by 1 each hour-->
 			<div class="row time-block">
-				<div class="col-lg-2 col-md-2 hour">5pm</div>
-				<textarea class="col-lg-8 col-md-8 past">PAST</textarea>
-				<button class="col-lg-2 col-md-2 saveBtn"><i class="far fa-save sav"></i></button>
+				<div class="col-lg-2 col-md-2 hour">9am</div>
+				<textarea id="time-9" class="col-lg-8 col-md-8"></textarea>
+				<button data-time="9" class="col-lg-2 col-md-2 saveBtn"><i class="far fa-save sav"></i></button>
 			</div>
 			<div class="row time-block">
-				<div class="col-lg-2 col-md-2 hour">6pm</div>
-				<textarea class="col-lg-8 col-md-8 past">PAST</textarea>
-				<button class="col-lg-2 col-md-2 saveBtn"><i class="far fa-save sav"></i></button>
-			</div>
-		</div>
-		<!-- PRESENT ROW: Should only be one and only at between your work day (9-5 or 9 hours)-->
-		<!-- <div class="row time-block">
-				<div class="col-lg-2 col-md-2 hour">6pm</div>
-				<textarea class="col-lg-8 col-md-8 present"></textarea>
-				<button class="col-lg-2 col-md-2 saveBtn"><i class="far fa-save sav"></i></button>
-			</div> -->
-		<!-- Future ROW: Should only be one and only at between your work day (9-5 or 9 hours)-->
-		<!-- <div class="row time-block">
-				<div class="col-lg-2 col-md-2 hour">7pm</div>
-				<textarea class="col-lg-8 col-md-8 future"></textarea>
-				<button class="col-lg-2 col-md-2 saveBtn"><i class="far fa-save sav"></i></button>
+				<div class="col-lg-2 col-md-2 hour">10am</div>
+				<textarea id="time-10" class="col-lg-8 col-md-8"></textarea>
+				<button data-time="10" class="col-lg-2 col-md-2 saveBtn"><i class="far fa-save sav"></i></button>
 			</div>
 			<div class="row time-block">
-				<div class="col-lg-2 col-md-2 hour">8pm</div>
-				<textarea class="col-lg-8 col-md-8 future"></textarea>
-				<button class="col-lg-2 col-md-2 saveBtn"><i class="far fa-save sav"></i></button>
-			</div>
-			<div class="row time-block">
-				<div class="col-lg-2 col-md-2 hour">9pm</div>
-				<textarea class="col-lg-8 col-md-8 future"></textarea>
-				<button class="col-lg-2 col-md-2 saveBtn"><i class="far fa-save sav"></i></button>
-			</div>
-			<div class="row time-block">
-				<div class="col-lg-2 col-md-2 hour">10pm</div>
-				<textarea class="col-lg-8 col-md-8 future"></textarea>
-				<button class="col-lg-2 col-md-2 saveBtn"><i class="far fa-save sav"></i></button>
-			</div>
-			<div class="row time-block">
-				<div class="col-lg-2 col-md-2 hour">11pm</div>
-				<textarea class="col-lg-8 col-md-8 future"></textarea>
-				<button class="col-lg-2 col-md-2 saveBtn"><i class="far fa-save sav"></i></button>
+				<div class="col-lg-2 col-md-2 hour">11am</div>
+				<textarea id="time-11" class="col-lg-8 col-md-8"></textarea>
+				<button data-time="11" class="col-lg-2 col-md-2 saveBtn"><i class="far fa-save sav"></i></button>
 			</div>
 			<div class="row time-block">
 				<div class="col-lg-2 col-md-2 hour">12pm</div>
-				<textarea class="col-lg-8 col-md-8 future"></textarea>
-				<button class="col-lg-2 col-md-2 saveBtn"><i class="far fa-save sav"></i></button>
+				<textarea id="time-12" class="col-lg-8 col-md-8"></textarea>
+				<button data-time="12" class="col-lg-2 col-md-2 saveBtn"><i class="far fa-save sav"></i></button>
 			</div>
-		</div> -->
+			<div class="row time-block">
+				<div class="col-lg-2 col-md-2 hour">1pm</div>
+				<textarea id="time-13" class="col-lg-8 col-md-8"></textarea>
+				<button data-time="13" class="col-lg-2 col-md-2 saveBtn"><i class="far fa-save sav"></i></button>
+			</div>
+			<div class="row time-block">
+				<div class="col-lg-2 col-md-2 hour">2pm</div>
+				<textarea id="time-14" class="col-lg-8 col-md-8"></textarea>
+				<button data-time="14" class="col-lg-2 col-md-2 saveBtn"><i class="far fa-save sav"></i></button>
+			</div>
+			<div class="row time-block">
+				<div class="col-lg-2 col-md-2 hour">3pm</div>
+				<textarea id="time-15" class="col-lg-8 col-md-8"></textarea>
+				<button data-time="15" class="col-lg-2 col-md-2 saveBtn"><i class="far fa-save sav"></i></button>
+			</div>
+			<div class="row time-block">
+				<div class="col-lg-2 col-md-2 hour">4pm</div>
+				<textarea id="time-16" class="col-lg-8 col-md-8"></textarea>
+				<button data-time="16" class="col-lg-2 col-md-2 saveBtn"><i class="far fa-save sav"></i></button>
+			</div>
+			<div class="row time-block">
+				<div class="col-lg-2 col-md-2 hour">5pm</div>
+				<textarea id="time-17" class="col-lg-8 col-md-8"></textarea>
+				<button data-time="17" class="col-lg-2 col-md-2 saveBtn"><i class="far fa-save sav"></i></button>
+			</div>
+		</div>
 
 		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
