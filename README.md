@@ -4,6 +4,8 @@
 
 The work-day-scheduler provides users a dynamic day planner to schedule events between 9am to 5pm. Time-blocks change colors based on present, past, and future events. Additionally, users saved events persist using client side local storage.
 
+We learned how to leverage third-party APIs to enhance our website's capabilities. Specifically, we used the moment.js library apply the date and time functionality.
+
 ## Tools Used
 
 - HTML
