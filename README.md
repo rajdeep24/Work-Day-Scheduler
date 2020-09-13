@@ -2,7 +2,16 @@
 
 ## Description
 
-For this project, the goal was to create a quiz application that challenged users through a series of questions within a alloted time limit.
+The work-day-scheduler provides users a dynamic day planner to schedule events between 9am to 5pm. Time-blocks change colors based on present, past, and future events. Additionally, users saved events persist using client side local storage.
+
+## Tools Used
+
+- HTML
+- CSS
+- JavaScript
+- Bootstrap
+- jQuery
+- Moment.JS
 
 Below are links to the webpage and the github repository for my Work-Day-Scheduler application:
 
@@ -25,15 +34,15 @@ No installation required. Simply view the application by clicking on the followi
 
 ## Usage
 
-Below are screen shots that follow a series of steps on how to use the application.
+Below are is a screen shot of the Work-Day-Scheduler.
 
 ### Screenshots
 
-![Step 1](./assets/images/Code_Quiz_Application.PNG)
-
-![Step 2](./assets/images/Code_Quiz_Application.PNG)
+![Work-Day-Schedular](./assets/images/Work_Day_Scheduler_ScreenShot.PNG)
 
 ## Credits
+
+I would like to credit georgia tech's coding bootcamp and my tutor, Kevin Ferguson for helping me reinforce core concepts related to DOM manipulation and local storage.
 
 TBD
 
